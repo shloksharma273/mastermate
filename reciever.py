@@ -15,7 +15,7 @@ def publisher(data):
 while True:
     client, addr = s.accept()
 
-    while True:
+    while not rospy.is_shutdown():
         content = client.recv(32)
         if len(content) == 0:
             break
