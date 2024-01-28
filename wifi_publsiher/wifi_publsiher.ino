@@ -9,7 +9,7 @@ const char * host = "192.168.0.104";
 void setup()
 {
  
-  Serial.begin(115200);
+  Serial.begin(115200);+
  
   WiFi.begin(ssid, password);
   while (WiFi.status() != WL_CONNECTED) {

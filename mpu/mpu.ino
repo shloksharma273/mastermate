@@ -73,7 +73,7 @@ void loop()
   Serial.println(z);
   Serial.println("Connected to server successful!");
  
-  client.print(String(z));
+  client.print(String(x));
  
 //  Serial.println("Disconnecting...");
 //  client.stop();
